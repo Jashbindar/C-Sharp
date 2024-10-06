@@ -43,17 +43,5 @@ namespace TutorialProject
             }
             return null;
         }
-
-        public User_Information get_user(int id_num)
-        {
-            for (int i =0; i < _information.Count; i++)
-            {
-                if (_information[i].Id == id_num)
-                {
-                    return _information[i];
-                }
-            }
-            return null;
-        }
     }
 }

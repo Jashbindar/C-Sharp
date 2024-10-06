@@ -10,6 +10,10 @@
             int number, id_num;
             char user_choice;
 
+            Console.WriteLine("---------------");
+            Console.WriteLine("User Management ");
+            Console.WriteLine("---------------");
+
             while (true)
             {
                 Console.WriteLine("\n1. Add user");
@@ -60,7 +64,7 @@
                             Console.WriteLine("Enter the id of the user:");
 
                             id_num = Convert.ToInt32(Console.ReadLine());
-                            User_Information id_to_find = list.get_user(id_num);
+                            User_Information id_to_find = list.findUser(id_num);
 
                             if (id_to_find != null)
                             {
@@ -71,6 +75,15 @@
                         {
                             list.Display_all_users();
                         }
+                        break;
+
+                    case '4':
+
+                        break;
+
+                    default:
+                        Console.WriteLine("Thank you for visiting...");
+                        Environment.Exit(0);
                         break;
                 }
             }
